@@ -327,7 +327,7 @@ function emailContact(email) {
   window.location.href = `mailto:@${email}`;
 }
 var regexPatterns = {
-  name: /^[a-zA-Z]{2,50}$/,
+  name: /^[a-zA-Z\s]{2,50}$/,
   phone: /^01[0125][0-9]{8}$/,
   email: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
 };
